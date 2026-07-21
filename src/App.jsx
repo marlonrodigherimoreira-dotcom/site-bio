@@ -39,12 +39,24 @@ export default function App() {
         <LeadIn
           eyebrow="Antes de começar"
           title="Assista aos próximos minutos."
-          text="Separamos um vídeo rápido pra te mostrar exatamente o problema que o Fluxy resolve — e por que ele é diferente de qualquer planilha que você já tentou usar."
+          text={
+            <>
+              Separamos um vídeo rápido pra te mostrar exatamente o
+              problema que o <span className="brand">NOZIL</span> resolve —
+              e por que ele é diferente de qualquer planilha que você já
+              tentou usar.
+            </>
+          }
         />
 
         <VideoBlock
           label="Área do vídeo — VSL principal"
-          title="Como o Fluxy elimina a bagunça financeira do seu negócio"
+          title={
+            <>
+              Como o <span className="brand">NOZIL</span> elimina a bagunça
+              financeira do seu negócio
+            </>
+          }
           tag="Texto temporário"
           caption='"Em menos de 3 minutos você entende por que sua planilha nunca foi o problema real."'
         />
@@ -53,16 +65,37 @@ export default function App() {
 
         <LeadIn
           eyebrow="Por dentro"
-          title="Veja o Fluxy funcionando de verdade."
+          title={
+            <>
+              Veja o <span className="brand">NOZIL</span> funcionando de
+              verdade.
+            </>
+          }
           text="Chega de imaginar como seria. Este é um tour real pela plataforma — do primeiro lançamento até o relatório final."
           style={{ paddingBottom: 0 }}
         />
 
         <VideoBlock
-          label="Área do vídeo — Fluxy por dentro"
-          title="Um tour completo pelo painel do Fluxy"
+          label={
+            <>
+              Área do vídeo — <span className="brand">NOZIL</span> por
+              dentro
+            </>
+          }
+          title={
+            <>
+              Um tour completo pelo painel do{' '}
+              <span className="brand">NOZIL</span>
+            </>
+          }
           tag="Texto temporário"
-          caption='"Do dashboard ao relatório: veja o Fluxy sendo usado no dia a dia real de um negócio."'
+          caption={
+            <>
+              "Do dashboard ao relatório: veja o{' '}
+              <span className="brand">NOZIL</span> sendo usado no dia a dia
+              real de um negócio."
+            </>
+          }
           style={{ marginTop: 56 }}
         />
 

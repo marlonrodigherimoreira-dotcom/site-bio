@@ -2,8 +2,8 @@
   --white:#FFFFFF;
   --ink:#0B0B0C;
   --ink-soft:#4A4A52;
-  --pink:#FF007F;
-  --pink-soft:#FFE1EF;
+  --pink:#E60023;
+  --pink-soft:#FCE0E3;
   --line:#E7E7EA;
   --wrap:640px;
 }
@@ -45,6 +45,11 @@ a, button{font-family:inherit;}
   text-transform:uppercase;
   color:var(--pink);
 }
+.brand{
+  font-family:'Rubik Spray Paint', cursive;
+  color:var(--pink);
+}
+
 .eyebrow::before{
   content:"";
   width:7px;height:7px;
@@ -269,7 +274,7 @@ section.copy p.lead{
   display:flex;
   align-items:center;
   justify-content:center;
-  box-shadow:0 0 0 1px rgba(255,255,255,.15), 0 20px 50px rgba(255,0,127,.35);
+  box-shadow:0 0 0 1px rgba(255,255,255,.15), 0 20px 50px rgba(230,0,35,.35);
   margin-bottom:22px;
 }
 .play-btn::after{
@@ -386,10 +391,11 @@ section.copy p.lead{
   padding:19px 34px;
   border-radius:100px;
   cursor:pointer;
-  box-shadow:0 16px 40px rgba(255,0,127,.28);
+  box-shadow:0 16px 40px rgba(230,0,35,.28);
   transition:transform .18s ease;
 }
 .buy-btn:active{transform:scale(.97);}
+.buy-btn .brand{color:inherit;}
 .buy-note{
   margin-top:14px;
   font-family:'JetBrains Mono', monospace;

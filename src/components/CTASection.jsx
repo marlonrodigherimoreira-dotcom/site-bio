@@ -17,7 +17,7 @@ export default function CTASection() {
 
         {/* Botão apenas visual — não leva a lugar nenhum */}
         <Reveal as="button" className="buy-btn" delay={3} type="button">
-          Quero usar o Fluxy →
+          Quero usar o <span className="brand">NOZIL</span> →
         </Reveal>
 
         <Reveal as="div" className="buy-note" delay={3}>

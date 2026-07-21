@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="hero">
       <div className="wrap">
         <Reveal as="span" className="eyebrow" initiallyVisible>
-          Fluxy // gestão financeira
+          <span className="brand">NOZIL</span> // gestão financeira
         </Reveal>
 
         <Reveal as="h1" delay={1} initiallyVisible>
@@ -17,9 +17,9 @@ export default function Hero() {
         </Reveal>
 
         <Reveal as="p" className="lead" delay={2} initiallyVisible>
-          O Fluxy organiza receitas, despesas e decisões do seu negócio em um
-          só lugar — simples o suficiente pra abrir de manhã e usar o dia
-          inteiro.
+          O <span className="brand">NOZIL</span> organiza receitas, despesas
+          e decisões do seu negócio em um só lugar — simples o suficiente
+          pra abrir de manhã e usar o dia inteiro.
         </Reveal>
 
         <Reveal as="div" className="scroll-cue" delay={3} initiallyVisible>

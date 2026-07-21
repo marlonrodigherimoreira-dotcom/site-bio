@@ -10,13 +10,14 @@ export default function AlphaSection() {
           Grupo Alpha
         </Reveal>
         <Reveal as="h2" delay={1}>
-          Ajude a construir o Fluxy antes de todo mundo.
+          Ajude a construir o <span className="brand">NOZIL</span> antes de
+          todo mundo.
         </Reveal>
         <Reveal as="p" className="lead" delay={2}>
           O Grupo Alpha é um grupo fechado formado pelos primeiros usuários
-          do Fluxy. Antes do lançamento oficial, cada novidade chega
-          primeiro para eles — e a experiência de quem usa ajuda a decidir
-          os próximos passos da plataforma.
+          do <span className="brand">NOZIL</span>. Antes do lançamento
+          oficial, cada novidade chega primeiro para eles — e a experiência
+          de quem usa ajuda a decidir os próximos passos da plataforma.
         </Reveal>
 
         <div className="alpha-list">
