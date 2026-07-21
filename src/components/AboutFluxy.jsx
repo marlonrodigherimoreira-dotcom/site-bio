@@ -1,33 +1,20 @@
 import Reveal from './Reveal.jsx'
-import Feature from './Feature.jsx'
-import features from '../data/features.js'
 
 export default function AboutFluxy() {
   return (
     <section className="copy">
       <div className="wrap">
-        <Reveal as="span" className="eyebrow">
-          O que é o <span className="brand">NOZIL</span>
+        <Reveal as="h2">
+          Um app simples para resolver uma tarefa complicada.
         </Reveal>
-        <Reveal as="h2" delay={1}>
-          Sua gestão financeira, finalmente num lugar só.
+        <Reveal as="p" className="lead" delay={1}>
+          A <span className="brand">Nozzil</span> pega a sua dor de cabeça
+          com números e faz o trabalho pesado por você.
         </Reveal>
         <Reveal as="p" className="lead" delay={2}>
-          O <span className="brand">NOZIL</span> é um sistema de gestão
-          financeira feito para microempresas, pequenos negócios,
-          freelancers, prestadores de serviço e pequenas agências. Ele não
-          tenta ser um ERP complicado — a missão é acabar com a bagunça de
-          planilhas, cadernos e aplicativos soltos, reunindo tudo num painel
-          simples de usar, mesmo sem experiência em finanças.
+          Veja quanto entrou, quanto saiu, quanto realmente sobrou e como
+          está a saúde do seu negócio — tudo em um único lugar.
         </Reveal>
-      </div>
-
-      <div className="wrap">
-        <div className="features">
-          {features.map((f) => (
-            <Feature key={f.title} {...f} />
-          ))}
-        </div>
       </div>
     </section>
   )

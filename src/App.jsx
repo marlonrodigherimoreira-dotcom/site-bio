@@ -2,7 +2,6 @@ import GrowthLine from './components/GrowthLine.jsx'
 import Header from './components/Header.jsx'
 import Hero from './components/Hero.jsx'
 import Ticker from './components/Ticker.jsx'
-import LeadIn from './components/LeadIn.jsx'
 import VideoBlock from './components/VideoBlock.jsx'
 import AboutFluxy from './components/AboutFluxy.jsx'
 import CTASection from './components/CTASection.jsx'
@@ -36,67 +35,30 @@ export default function App() {
 
         <Ticker items={tickerPhrases1} />
 
-        <LeadIn
-          eyebrow="Antes de começar"
-          title="Assista aos próximos minutos."
-          text={
-            <>
-              Separamos um vídeo rápido pra te mostrar exatamente o
-              problema que o <span className="brand">NOZIL</span> resolve —
-              e por que ele é diferente de qualquer planilha que você já
-              tentou usar.
-            </>
-          }
+        {/* VSL principal */}
+        <VideoBlock
+          label="Área do vídeo — VSL"
+          title="Veja como a Nozzil resolve isso"
+          tag="Texto temporário"
+          caption='"Assista para entender como a Nozzil transforma sua bagunça financeira em clareza."'
         />
 
+        {/* subVSL */}
         <VideoBlock
-          label="Área do vídeo — VSL principal"
-          title={
-            <>
-              Como o <span className="brand">NOZIL</span> elimina a bagunça
-              financeira do seu negócio
-            </>
-          }
+          label="Área do vídeo — subVSL"
+          title="Um complemento rápido antes de continuar"
           tag="Texto temporário"
-          caption='"Em menos de 3 minutos você entende por que sua planilha nunca foi o problema real."'
+          caption='"Um vídeo curto pra reforçar o que você acabou de ver."'
         />
 
         <AboutFluxy />
 
-        <LeadIn
-          eyebrow="Por dentro"
-          title={
-            <>
-              Veja o <span className="brand">NOZIL</span> funcionando de
-              verdade.
-            </>
-          }
-          text="Chega de imaginar como seria. Este é um tour real pela plataforma — do primeiro lançamento até o relatório final."
-          style={{ paddingBottom: 0 }}
-        />
-
+        {/* VSL secundária */}
         <VideoBlock
-          label={
-            <>
-              Área do vídeo — <span className="brand">NOZIL</span> por
-              dentro
-            </>
-          }
-          title={
-            <>
-              Um tour completo pelo painel do{' '}
-              <span className="brand">NOZIL</span>
-            </>
-          }
+          label="Área do vídeo — VSL"
+          title="Veja a Nozzil funcionando de verdade"
           tag="Texto temporário"
-          caption={
-            <>
-              "Do dashboard ao relatório: veja o{' '}
-              <span className="brand">NOZIL</span> sendo usado no dia a dia
-              real de um negócio."
-            </>
-          }
-          style={{ marginTop: 56 }}
+          caption='"Do dashboard ao relatório: veja a Nozzil sendo usada no dia a dia real de um negócio."'
         />
 
         <Ticker items={tickerPhrases2} />

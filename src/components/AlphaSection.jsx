@@ -1,30 +1,44 @@
 import Reveal from './Reveal.jsx'
-import AlphaItem from './AlphaItem.jsx'
-import alphaBenefits from '../data/alphaBenefits.js'
+import AlphaChecklist from './AlphaChecklist.jsx'
+import PricingTiers from './PricingTiers.jsx'
+import alphaChecklist from '../data/alphaChecklist.js'
+import pricingTiers from '../data/pricingTiers.js'
 
 export default function AlphaSection() {
   return (
-    <section className="alpha">
+    <section className="alpha" id="alpha">
       <div className="wrap">
         <Reveal as="span" className="eyebrow">
           Grupo Alpha
         </Reveal>
         <Reveal as="h2" delay={1}>
-          Ajude a construir o <span className="brand">NOZIL</span> antes de
-          todo mundo.
+          Entre antes do lançamento oficial.
         </Reveal>
         <Reveal as="p" className="lead" delay={2}>
-          O Grupo Alpha é um grupo fechado formado pelos primeiros usuários
-          do <span className="brand">NOZIL</span>. Antes do lançamento
-          oficial, cada novidade chega primeiro para eles — e a experiência
-          de quem usa ajuda a decidir os próximos passos da plataforma.
+          O Grupo Alpha é destinado aos primeiros usuários da{' '}
+          <span className="brand">Nozzil</span>. Além de garantir um
+          desconto exclusivo durante o período Alpha, você acompanha a
+          evolução do produto de perto e participa das discussões que
+          ajudam a definir as próximas melhorias.
         </Reveal>
 
-        <div className="alpha-list">
-          {alphaBenefits.map((b) => (
-            <AlphaItem key={b.title} {...b} />
-          ))}
-        </div>
+        <Reveal as="h3" className="alpha-subtitle">
+          O que você recebe
+        </Reveal>
+        <AlphaChecklist items={alphaChecklist} />
+
+        <Reveal as="h3" className="alpha-subtitle">
+          Lotes
+        </Reveal>
+        <PricingTiers tiers={pricingTiers} />
+
+        <Reveal as="h3" className="alpha-closing-title">
+          Faça parte dos primeiros usuários.
+        </Reveal>
+        <Reveal as="p" className="lead" delay={1}>
+          Entenda seu negócio com mais clareza e tenha mais segurança na
+          hora de fechar o caixa no final do mês.
+        </Reveal>
       </div>
     </section>
   )

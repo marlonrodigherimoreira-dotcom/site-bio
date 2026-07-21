@@ -3,10 +3,10 @@ export default function Footer() {
     <footer>
       <div className="wrap">
         <div className="logo">
-          <span className="brand">NOZIL</span>
+          <span className="brand">Nozzil</span>
         </div>
         <p>
-          <span className="brand">NOZIL</span> © 2026 — Gestão financeira
+          <span className="brand">Nozzil</span> © 2026 — Gestão financeira
           sem complicação.
         </p>
       </div>

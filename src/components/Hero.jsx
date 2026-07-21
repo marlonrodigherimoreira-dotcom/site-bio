@@ -4,22 +4,20 @@ export default function Hero() {
   return (
     <section className="hero">
       <div className="wrap">
-        <Reveal as="span" className="eyebrow" initiallyVisible>
-          <span className="brand">NOZIL</span> // gestão financeira
+        <Reveal as="h1" initiallyVisible>
+          Desorganização <span>custa caro.</span>
         </Reveal>
 
-        <Reveal as="h1" delay={1} initiallyVisible>
-          CHEGA DE
-          <br />
-          ADIVINHAR
-          <br />
-          O SEU <span>DINHEIRO.</span>
+        <Reveal as="p" className="lead" delay={1} initiallyVisible>
+          Quanto mais você demora para entender o seu financeiro, maiores
+          são as chances de tomar decisões erradas.
         </Reveal>
 
         <Reveal as="p" className="lead" delay={2} initiallyVisible>
-          O <span className="brand">NOZIL</span> organiza receitas, despesas
-          e decisões do seu negócio em um só lugar — simples o suficiente
-          pra abrir de manhã e usar o dia inteiro.
+          Foi por isso que eu e minha equipe criamos a{' '}
+          <span className="brand">Nozzil</span>: um app que organiza o seu
+          financeiro e transforma gastos, receitas e lucro em informações
+          simples, para que você entenda sua situação em poucos minutos.
         </Reveal>
 
         <Reveal as="div" className="scroll-cue" delay={3} initiallyVisible>

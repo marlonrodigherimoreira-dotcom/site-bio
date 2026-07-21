@@ -1,7 +1,8 @@
-# Fluxy — Landing Page (React + Vite)
+# Nozzil — Landing Page (React + Vite)
 
-Landing page do Fluxy convertida de HTML puro para React, componentizada,
-mantendo exatamente o mesmo visual e efeitos da versão original.
+Landing page da Nozzil convertida de HTML puro para React, componentizada,
+com a copy de vendas (VSL, subVSL, explicação do produto, Grupo Alpha e
+lotes de preço).
 
 ## Como rodar
 
@@ -24,34 +25,36 @@ npm run preview
 ```
 src/
   components/
-    Reveal.jsx        # wrapper do efeito de fade/slide ao rolar a tela
-    GrowthLine.jsx     # linha rosa animada que "desenha" com o scroll
+    Reveal.jsx          # wrapper do efeito de fade/slide ao rolar a tela
+    GrowthLine.jsx       # linha vermelha animada que "desenha" com o scroll
     Header.jsx
-    Hero.jsx
-    Ticker.jsx         # faixa de frases rolando (marquee)
-    LeadIn.jsx         # texto de introdução antes de cada VSL
-    VideoBlock.jsx     # placeholder de vídeo em tela cheia (sem vídeo real)
-    AboutFluxy.jsx     # explicação do Fluxy + grade de funcionalidades
-    Feature.jsx
-    CTASection.jsx     # botão de compra (sem link/ação)
-    AlphaSection.jsx   # explicação do Grupo Alpha
-    AlphaItem.jsx
+    Hero.jsx             # "Desorganização custa caro." + texto de abertura
+    Ticker.jsx           # faixa de frases rolando (marquee)
+    VideoBlock.jsx       # placeholder de vídeo em tela cheia (sem vídeo real)
+    AboutFluxy.jsx       # "Um app simples para resolver uma tarefa complicada."
+    CTASection.jsx       # bloco de fechamento + botão "Quero entrar para o Grupo Alpha"
+    AlphaSection.jsx     # Grupo Alpha: benefícios, lotes e fechamento
+    AlphaChecklist.jsx   # lista "O que você recebe" (✅)
+    PricingTiers.jsx     # cards dos lotes (1º, 2º, 3º)
     Footer.jsx
   hooks/
-    useReveal.js       # IntersectionObserver do efeito de scroll reveal
-    useGrowthLine.js    # progresso de scroll aplicado ao SVG da linha
+    useReveal.js         # IntersectionObserver do efeito de scroll reveal
+    useGrowthLine.js      # progresso de scroll aplicado ao SVG da linha
   data/
-    features.js        # conteúdo das 12 funcionalidades do Fluxy
-    alphaBenefits.js    # conteúdo dos benefícios do Grupo Alpha
-  App.jsx              # monta a página inteira, na ordem original
-  index.css            # todo o CSS do site (idêntico ao original)
-  main.jsx             # entry point
+    alphaChecklist.js     # itens do checklist do Grupo Alpha
+    pricingTiers.js        # dados dos 3 lotes (preço, vagas, desconto, cupom)
+  App.jsx                # monta a página inteira, na ordem da copy atual
+  index.css               # todo o CSS do site
+  main.jsx                # entry point
 ```
 
 ## Observações
 
-- Os blocos marcados como "Área do vídeo" são apenas placeholders visuais
-  em tela cheia (100vw x 100vh) — nenhum vídeo real foi inserido.
-- O botão "Quero usar o Fluxy" não possui link ou ação, como solicitado.
-- Todo o design (cores, tipografia, espaçamentos, animações) foi mantido
-  idêntico à versão original em HTML.
+- Os blocos marcados como "Área do vídeo" (VSL, subVSL e VSL secundária)
+  são apenas placeholders visuais em tela cheia (100vw x 100vh) — nenhum
+  vídeo real foi inserido.
+- O botão "Quero entrar para o Grupo Alpha" não possui link ou ação.
+- O card do 1º lote mostra um campo de cupom vazio (`CUPOM: ____`), pronto
+  pra ser preenchido quando o cupom real existir.
+- A marca é exibida como **Nozzil**, na fonte Rubik Spray Paint e na cor
+  vermelha da marca (`#E60023`).
