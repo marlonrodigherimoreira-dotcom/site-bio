@@ -3,6 +3,7 @@ import Header from './components/Header.jsx'
 import Hero from './components/Hero.jsx'
 import Ticker from './components/Ticker.jsx'
 import VideoBlock from './components/VideoBlock.jsx'
+import SubVslNote from './components/SubVslNote.jsx'
 import AboutFluxy from './components/AboutFluxy.jsx'
 import CTASection from './components/CTASection.jsx'
 import AlphaSection from './components/AlphaSection.jsx'
@@ -38,27 +39,22 @@ export default function App() {
         {/* VSL principal */}
         <VideoBlock
           label="Área do vídeo — VSL"
-          title="Veja como a Nozzil resolve isso"
+          title="Veja como a Nozil resolve isso"
           tag="Texto temporário"
-          caption='"Assista para entender como a Nozzil transforma sua bagunça financeira em clareza."'
+          caption='"Assista para entender como a Nozil transforma sua bagunça financeira em clareza."'
         />
 
-        {/* subVSL */}
-        <VideoBlock
-          label="Área do vídeo — subVSL"
-          title="Um complemento rápido antes de continuar"
-          tag="Texto temporário"
-          caption='"Um vídeo curto pra reforçar o que você acabou de ver."'
-        />
+        {/* subVSL — texto pequeno, não é vídeo */}
+        <SubVslNote />
 
         <AboutFluxy />
 
         {/* VSL secundária */}
         <VideoBlock
           label="Área do vídeo — VSL"
-          title="Veja a Nozzil funcionando de verdade"
+          title="Veja a Nozil funcionando de verdade"
           tag="Texto temporário"
-          caption='"Do dashboard ao relatório: veja a Nozzil sendo usada no dia a dia real de um negócio."'
+          caption='"Do dashboard ao relatório: veja a Nozil sendo usada no dia a dia real de um negócio."'
         />
 
         <Ticker items={tickerPhrases2} />

@@ -16,7 +16,7 @@ export default function AlphaSection() {
         </Reveal>
         <Reveal as="p" className="lead" delay={2}>
           O Grupo Alpha é destinado aos primeiros usuários da{' '}
-          <span className="brand">Nozzil</span>. Além de garantir um
+          <span className="brand">Nozil</span>. Além de garantir um
           desconto exclusivo durante o período Alpha, você acompanha a
           evolução do produto de perto e participa das discussões que
           ajudam a definir as próximas melhorias.

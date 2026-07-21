@@ -49,6 +49,9 @@ a, button{font-family:inherit;}
   font-family:'Rubik Spray Paint', cursive;
   color:var(--pink);
 }
+.logo .brand{
+  letter-spacing:.08em;
+}
 
 .eyebrow::before{
   content:"";
@@ -164,8 +167,10 @@ header{
   position:relative;
 }
 .hero h1{
-  font-size:clamp(40px, 12vw, 68px);
+  font-size:clamp(32px, 9.5vw, 60px);
   margin-top:18px;
+  overflow-wrap:break-word;
+  word-break:break-word;
 }
 .hero h1 span{color:var(--pink);}
 .hero p.lead{
@@ -320,6 +325,29 @@ section.copy p.lead{
   color:var(--pink);
   display:block;
   margin-bottom:6px;
+}
+
+/* ---------- subVSL text placeholder ---------- */
+.subvsl-section{
+  padding-top:32px;
+  padding-bottom:32px;
+}
+.subvsl-box{
+  border:1.5px dashed var(--line);
+  border-radius:14px;
+  padding:18px 20px;
+}
+.subvsl-tag{
+  display:block;
+  font-family:'JetBrains Mono', monospace;
+  font-size:10.5px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--pink);
+  margin-bottom:8px;
+}
+.subvsl-box p{
+  font-size:14px;
 }
 
 /* ---------- feature grid ---------- */
@@ -515,3 +543,30 @@ footer{
 }
 footer .logo{justify-content:center;margin-bottom:10px;}
 footer p{font-size:12.5px;color:#A2A2AA;}
+
+.social-row{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:14px;
+  margin:4px 0 18px;
+}
+.social-btn{
+  width:34px;
+  height:34px;
+  border-radius:50%;
+  border:1.5px solid var(--ink);
+  color:var(--ink);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
+  transition:background .2s, color .2s, border-color .2s, transform .15s;
+}
+.social-btn svg{width:17px;height:17px;}
+.social-btn:active{
+  background:var(--pink);
+  border-color:var(--pink);
+  color:var(--white);
+  transform:scale(.94);
+}

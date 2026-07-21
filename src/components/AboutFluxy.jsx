@@ -8,7 +8,7 @@ export default function AboutFluxy() {
           Um app simples para resolver uma tarefa complicada.
         </Reveal>
         <Reveal as="p" className="lead" delay={1}>
-          A <span className="brand">Nozzil</span> pega a sua dor de cabeça
+          A <span className="brand">Nozil</span> pega a sua dor de cabeça
           com números e faz o trabalho pesado por você.
         </Reveal>
         <Reveal as="p" className="lead" delay={2}>

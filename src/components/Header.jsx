@@ -3,7 +3,7 @@ export default function Header() {
     <header>
       <div className="nav-inner">
         <div className="logo">
-          <span className="brand">Nozzil</span>
+          <span className="brand">Nozil</span>
         </div>
         <a className="nav-cta" href="#cta">
           Começar

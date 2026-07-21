@@ -1,6 +1,6 @@
-# Nozzil — Landing Page (React + Vite)
+# Nozil — Landing Page (React + Vite)
 
-Landing page da Nozzil convertida de HTML puro para React, componentizada,
+Landing page da Nozil convertida de HTML puro para React, componentizada,
 com a copy de vendas (VSL, subVSL, explicação do produto, Grupo Alpha e
 lotes de preço).
 
@@ -56,5 +56,5 @@ src/
 - O botão "Quero entrar para o Grupo Alpha" não possui link ou ação.
 - O card do 1º lote mostra um campo de cupom vazio (`CUPOM: ____`), pronto
   pra ser preenchido quando o cupom real existir.
-- A marca é exibida como **Nozzil**, na fonte Rubik Spray Paint e na cor
+- A marca é exibida como **Nozil**, na fonte Rubik Spray Paint e na cor
   vermelha da marca (`#E60023`).

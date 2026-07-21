@@ -15,7 +15,7 @@ export default function Hero() {
 
         <Reveal as="p" className="lead" delay={2} initiallyVisible>
           Foi por isso que eu e minha equipe criamos a{' '}
-          <span className="brand">Nozzil</span>: um app que organiza o seu
+          <span className="brand">Nozil</span>: um app que organiza o seu
           financeiro e transforma gastos, receitas e lucro em informações
           simples, para que você entenda sua situação em poucos minutos.
         </Reveal>
