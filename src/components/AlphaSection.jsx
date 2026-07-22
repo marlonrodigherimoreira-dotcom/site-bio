@@ -39,6 +39,11 @@ export default function AlphaSection() {
           Entenda seu negócio com mais clareza e tenha mais segurança na
           hora de fechar o caixa no final do mês.
         </Reveal>
+
+        {/* Botão apenas visual — não leva a lugar nenhum */}
+        <Reveal as="button" className="buy-btn" delay={2} type="button">
+          Quero entrar para o Grupo Alpha
+        </Reveal>
       </div>
     </section>
   )

@@ -6,7 +6,7 @@ export default function Header() {
           <span className="brand">Nozil</span>
         </div>
         <a className="nav-cta" href="#cta">
-          Começar
+          Comprar agora
         </a>
       </div>
     </header>
