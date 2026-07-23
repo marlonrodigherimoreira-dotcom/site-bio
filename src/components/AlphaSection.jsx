@@ -40,8 +40,15 @@ export default function AlphaSection() {
           hora de fechar o caixa no final do mês.
         </Reveal>
 
-        {/* Botão apenas visual — não leva a lugar nenhum */}
-        <Reveal as="button" className="buy-btn" delay={2} type="button">
+        {/* Leva para o checkout da Kiwify */}
+        <Reveal
+          as="a"
+          className="buy-btn"
+          delay={2}
+          href="https://pay.kiwify.com.br/QMOtvgt"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Quero entrar para o Grupo Alpha
         </Reveal>
       </div>

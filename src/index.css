@@ -21,9 +21,6 @@ body{
   font-family:'Inter', sans-serif;
   -webkit-font-smoothing:antialiased;
   overflow-x:hidden;
-  background-image:
-    radial-gradient(var(--line) 1px, transparent 1px);
-  background-size:22px 22px;
 }
 
 .wrap{
@@ -412,6 +409,7 @@ section.copy p.lead{
   background:var(--pink);
   color:var(--white);
   border:none;
+  text-decoration:none;
   font-family:'Archivo', sans-serif;
   font-weight:800;
   font-size:16px;
@@ -526,6 +524,8 @@ section.copy p.lead{
   padding:7px 11px;
   border-radius:100px;
   white-space:nowrap;
+  text-decoration:none;
+  display:inline-block;
 }
 
 .alpha-closing-title{

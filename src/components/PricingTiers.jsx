@@ -16,7 +16,14 @@ export default function PricingTiers({ tiers }) {
               <div className="lote-coupon">CUPOM: {tier.coupon || '____'}</div>
             )}
           </div>
-          <span className="lote-off">{tier.off}</span>
+          <a
+            className="lote-off"
+            href="https://pay.kiwify.com.br/QMOtvgt"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {tier.off}
+          </a>
         </Reveal>
       ))}
     </div>
