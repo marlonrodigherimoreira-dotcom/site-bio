@@ -5,7 +5,7 @@ const pricingTiers = [
     price: 'R$11,97/mês',
     vagas: '10 vagas',
     off: '70% OFF',
-    coupon: '',
+    coupon: 'FLUXOS70',
   },
   {
     medal: '🥈',
