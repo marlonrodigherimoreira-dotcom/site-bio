@@ -23,6 +23,58 @@ body{
   overflow-x:hidden;
 }
 
+.site-background{
+  position:fixed;
+  inset:0;
+  width:100vw;
+  height:100vh;
+  z-index:0;
+  pointer-events:none;
+  background:var(--white);
+}
+
+.site-content{
+  position:relative;
+  z-index:1;
+}
+
+/* ---------- faixa promocional (topo) ---------- */
+.promo-banner{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:4px;
+  width:100vw;
+  margin-left:calc(50% - 50vw);
+  background:var(--pink);
+  text-decoration:none;
+  text-align:center;
+  padding:26px 20px;
+  cursor:pointer;
+}
+.promo-line1{
+  font-family:'Archivo', sans-serif;
+  font-weight:900;
+  font-size:clamp(18px, 5.2vw, 26px);
+  letter-spacing:-0.01em;
+  color:var(--white);
+}
+.promo-line2{
+  font-family:'Archivo', sans-serif;
+  font-weight:800;
+  font-size:clamp(14px, 3.8vw, 18px);
+  color:var(--white);
+}
+.promo-old{
+  text-decoration:line-through;
+  opacity:.75;
+  font-weight:600;
+}
+.promo-new{
+  font-weight:900;
+}
+
 .wrap{
   max-width:var(--wrap);
   margin:0 auto;

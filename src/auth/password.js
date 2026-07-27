@@ -1,0 +1,1 @@
+export const APP_PASSWORD = "horizonte36";

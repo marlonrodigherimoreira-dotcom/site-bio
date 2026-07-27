@@ -1,5 +1,7 @@
+import AnimatedBackground from './components/AnimatedBackground.jsx'
 import GrowthLine from './components/GrowthLine.jsx'
 import Header from './components/Header.jsx'
+import PromoBanner from './components/PromoBanner.jsx'
 import Hero from './components/Hero.jsx'
 import Ticker from './components/Ticker.jsx'
 import VideoBlock from './components/VideoBlock.jsx'
@@ -27,44 +29,49 @@ const tickerPhrases2 = [
 export default function App() {
   return (
     <>
-      <GrowthLine />
+      <AnimatedBackground />
 
-      <Header />
+      <div className="site-content">
+        <GrowthLine />
 
-      <main>
-        <Hero />
+        <Header />
+        <PromoBanner />
 
-        <Ticker items={tickerPhrases1} />
+        <main>
+          <Hero />
 
-        {/* VSL principal */}
-        <VideoBlock
-          label="Área do vídeo — VSL"
-          title="Veja como a Nozil resolve isso"
-          tag="Texto temporário"
-          caption='"Assista para entender como a Nozil transforma sua bagunça financeira em clareza."'
-        />
+          <Ticker items={tickerPhrases1} />
 
-        {/* subVSL — texto pequeno, não é vídeo */}
-        <SubVslNote />
+          {/* VSL principal */}
+          <VideoBlock
+            label="Área do vídeo — VSL"
+            title="Veja como a Nozil resolve isso"
+            tag="Texto temporário"
+            caption='"Assista para entender como a Nozil transforma sua bagunça financeira em clareza."'
+          />
 
-        <AboutFluxy />
+          {/* subVSL — texto pequeno, não é vídeo */}
+          <SubVslNote />
 
-        {/* VSL secundária */}
-        <VideoBlock
-          label="Área do vídeo — VSL"
-          title="Veja a Nozil funcionando de verdade"
-          tag="Texto temporário"
-          caption='"Do dashboard ao relatório: veja a Nozil sendo usada no dia a dia real de um negócio."'
-        />
+          <AboutFluxy />
 
-        <Ticker items={tickerPhrases2} />
+          {/* VSL secundária */}
+          <VideoBlock
+            label="Área do vídeo — VSL"
+            title="Veja a Nozil funcionando de verdade"
+            tag="Texto temporário"
+            caption='"Do dashboard ao relatório: veja a Nozil sendo usada no dia a dia real de um negócio."'
+          />
 
-        <CTASection />
+          <Ticker items={tickerPhrases2} />
 
-        <AlphaSection />
-      </main>
+          <CTASection />
 
-      <Footer />
+          <AlphaSection />
+        </main>
+
+        <Footer />
+      </div>
     </>
   )
 }

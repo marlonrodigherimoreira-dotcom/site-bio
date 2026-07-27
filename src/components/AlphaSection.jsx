@@ -19,7 +19,7 @@ export default function AlphaSection() {
           <span className="brand">Nozil</span>. Além de garantir um
           desconto exclusivo durante o período Alpha, você acompanha a
           evolução do produto de perto e participa das discussões que
-          ajudam a definir as próximas melhorias.
+          ajudam a definir as próximas melhorias. Tudo isso via telegram.
         </Reveal>
 
         <Reveal as="h3" className="alpha-subtitle">

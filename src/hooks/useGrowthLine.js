@@ -21,7 +21,10 @@ export function useGrowthLine() {
       const scrollTop = window.scrollY || document.documentElement.scrollTop
       const max = document.documentElement.scrollHeight - window.innerHeight
       const progress = max > 0 ? Math.min(1, Math.max(0, scrollTop / max)) : 0
-      path.style.strokeDashoffset = len * (1 - progress)
+      // easing: cresce mais devagar no começo/meio e fecha exatamente
+      // em 1 quando o progresso chega a 1, chegando junto com o fim da página
+      const eased = Math.pow(progress, 1.6)
+      path.style.strokeDashoffset = len * (1 - eased)
       ticking = false
     }
 
