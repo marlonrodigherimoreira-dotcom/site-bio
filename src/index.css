@@ -64,14 +64,14 @@ body{
   color:var(--white);
   overflow-wrap:break-word;
   word-break:break-word;
-  animation:promoExplode .7s cubic-bezier(.2,.8,.25,1) .15s both;
+  animation:promoExplode 1.5s cubic-bezier(.2,.8,.25,1) .2s both;
 }
 .promo-line2{
   font-family:'Archivo', sans-serif;
   font-weight:800;
   font-size:clamp(21px, 6.5vw, 30px);
   color:var(--white);
-  animation:promoExplode .7s cubic-bezier(.2,.8,.25,1) .32s both;
+  animation:promoExplode 1.5s cubic-bezier(.2,.8,.25,1) .55s both;
 }
 .promo-old{
   text-decoration:line-through;
