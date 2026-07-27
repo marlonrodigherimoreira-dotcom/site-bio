@@ -44,7 +44,7 @@ body{
   flex-direction:column;
   align-items:center;
   justify-content:center;
-  gap:4px;
+  gap:6px;
   width:100vw;
   margin-left:calc(50% - 50vw);
   background:var(--pink);
@@ -52,19 +52,26 @@ body{
   text-align:center;
   padding:26px 20px;
   cursor:pointer;
+  overflow:hidden;
+  animation:promoTectonic .9s cubic-bezier(.2,.8,.25,1) both;
 }
 .promo-line1{
-  font-family:'Archivo', sans-serif;
-  font-weight:900;
-  font-size:clamp(18px, 5.2vw, 26px);
-  letter-spacing:-0.01em;
+  font-family:'Rubik Spray Paint', cursive;
+  font-weight:400;
+  font-size:clamp(26px, 10.5vw, 52px);
+  line-height:1.05;
+  letter-spacing:.01em;
   color:var(--white);
+  overflow-wrap:break-word;
+  word-break:break-word;
+  animation:promoExplode .7s cubic-bezier(.2,.8,.25,1) .15s both;
 }
 .promo-line2{
   font-family:'Archivo', sans-serif;
   font-weight:800;
-  font-size:clamp(14px, 3.8vw, 18px);
+  font-size:clamp(21px, 6.5vw, 30px);
   color:var(--white);
+  animation:promoExplode .7s cubic-bezier(.2,.8,.25,1) .32s both;
 }
 .promo-old{
   text-decoration:line-through;
@@ -74,6 +81,19 @@ body{
 .promo-new{
   font-weight:900;
 }
+
+@keyframes promoTectonic{
+  0%{transform:skewX(-9deg) translateX(-6%);}
+  35%{transform:skewX(6deg) translateX(3%);}
+  62%{transform:skewX(-3deg) translateX(-1%);}
+  100%{transform:skewX(0) translateX(0);}
+}
+@keyframes promoExplode{
+  0%{opacity:0; transform:scale(2.3); filter:blur(8px);}
+  55%{opacity:1; transform:scale(.94); filter:blur(0);}
+  100%{transform:scale(1);}
+}
+
 
 .wrap{
   max-width:var(--wrap);
