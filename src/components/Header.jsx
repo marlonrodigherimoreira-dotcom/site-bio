@@ -3,7 +3,7 @@ export default function Header() {
     <header>
       <div className="nav-inner">
         <div className="logo">
-          <span className="brand">Nozil</span>
+          <img src="/nozil-logo.jpeg" alt="Nozil" className="logo-img" />
         </div>
         <a
           className="nav-cta"
