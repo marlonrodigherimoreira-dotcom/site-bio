@@ -218,8 +218,11 @@ header{
   display:inline-block;
   margin-top:-14px;
 }
+.logo--image::after{
+  content:none;
+}
 .logo-img{
-  height:40px;
+  height:55px;
   width:auto;
   display:block;
 }

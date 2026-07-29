@@ -2,8 +2,8 @@ export default function Header() {
   return (
     <header>
       <div className="nav-inner">
-        <div className="logo">
-          <img src="/nozil-logo.jpeg" alt="Nozil" className="logo-img" />
+        <div className="logo logo--image">
+          <img src="/nozil-logo.png" alt="Nozil" className="logo-img" />
         </div>
         <a
           className="nav-cta"
