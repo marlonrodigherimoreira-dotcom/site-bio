@@ -12,12 +12,12 @@
 
 html{
   scroll-behavior:smooth;
-  background:var(--white);
+  background:var(--ink);
 }
 
 body{
-  background:var(--white);
-  color:var(--ink);
+  background:var(--ink);
+  color:var(--white);
   font-family:'Inter', sans-serif;
   -webkit-font-smoothing:antialiased;
   overflow-x:hidden;
@@ -30,7 +30,7 @@ body{
   height:100vh;
   z-index:0;
   pointer-events:none;
-  background:var(--white);
+  background:var(--ink);
 }
 
 .site-content{
@@ -138,7 +138,7 @@ h1,h2,h3{
 }
 
 p{
-  color:var(--ink-soft);
+  color:var(--white);
   line-height:1.55;
   font-size:16px;
 }
@@ -189,7 +189,7 @@ header{
   position:sticky;
   top:0;
   z-index:50;
-  background:rgba(255,255,255,.86);
+  background:rgba(11,11,12,.86);
   backdrop-filter:blur(10px);
   border-bottom:1px solid var(--line);
 }
@@ -229,14 +229,14 @@ header{
 .nav-cta{
   font-size:13px;
   font-weight:700;
-  color:var(--ink);
+  color:var(--white);
   text-decoration:none;
-  border:1.5px solid var(--ink);
+  border:1.5px solid var(--white);
   padding:8px 16px;
   border-radius:100px;
   transition:background .2s, color .2s, border-color .2s;
 }
-.nav-cta:active{background:var(--ink);color:var(--white);}
+.nav-cta:active{background:var(--white);color:var(--ink);}
 
 /* ---------- hero ---------- */
 .hero{
@@ -261,7 +261,7 @@ header{
   font-size:11px;
   letter-spacing:.12em;
   text-transform:uppercase;
-  color:var(--ink-soft);
+  color:var(--white);
   display:flex;
   align-items:center;
   gap:8px;
@@ -502,6 +502,14 @@ section.copy p.lead{
 }
 .buy-btn:active{transform:scale(.97);}
 .buy-btn .brand{color:inherit;}
+.cta-coupon{
+  margin-top:14px;
+  font-family:'Rajdhani', sans-serif;
+  font-weight:700;
+  font-size:16px;
+  letter-spacing:.02em;
+  color:var(--pink);
+}
 
 /* ---------- alpha section ---------- */
 .alpha{
@@ -509,6 +517,10 @@ section.copy p.lead{
   border-top:1px solid var(--line);
   border-bottom:1px solid var(--line);
   padding:64px 0;
+  color:var(--ink);
+}
+.alpha p{
+  color:var(--ink-soft);
 }
 .alpha h2{
   font-size:clamp(28px, 7.5vw, 38px);
@@ -622,7 +634,7 @@ footer{
   text-align:center;
 }
 footer .logo{justify-content:center;margin-bottom:10px;}
-footer p{font-size:12.5px;color:#A2A2AA;}
+footer p{font-size:12.5px;color:var(--white);}
 
 .social-row{
   display:flex;
@@ -635,8 +647,8 @@ footer p{font-size:12.5px;color:#A2A2AA;}
   width:34px;
   height:34px;
   border-radius:50%;
-  border:1.5px solid var(--ink);
-  color:var(--ink);
+  border:1.5px solid var(--white);
+  color:var(--white);
   display:flex;
   align-items:center;
   justify-content:center;

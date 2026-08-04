@@ -5,12 +5,7 @@ export default function Header() {
         <div className="logo logo--image">
           <img src="/nozil-logo.png" alt="Nozil" className="logo-img" />
         </div>
-        <a
-          className="nav-cta"
-          href="https://pay.kiwify.com.br/QMOtvgt"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a className="nav-cta" href="#cta">
           Comprar agora
         </a>
       </div>

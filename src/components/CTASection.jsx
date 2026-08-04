@@ -25,6 +25,10 @@ export default function CTASection() {
         >
           Quero entrar para o Grupo Alpha
         </Reveal>
+
+        <Reveal as="div" className="cta-coupon" delay={3}>
+          Cupom: FLUXOS70
+        </Reveal>
       </div>
     </section>
   )
