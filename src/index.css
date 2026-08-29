@@ -406,6 +406,188 @@ section.copy p.lead{
   margin-bottom:6px;
 }
 
+/* ---------- carrossel de VSL (2ª VSL) ---------- */
+.vsl-carousel{
+  width:100vw;
+  margin-left:calc(50% - 50vw);
+  background:#0B0B0C;
+  padding:0 0 22px;
+}
+.vsl-slide{
+  width:100%;
+}
+.vsl-video-placeholder{
+  position:relative;
+  width:100%;
+  aspect-ratio:1920 / 1080;
+  border:none;
+  padding:0;
+  cursor:pointer;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  background:
+    repeating-linear-gradient(135deg, #141416 0, #141416 2px, #0B0B0C 2px, #0B0B0C 26px);
+}
+.vsl-video-el,
+.vsl-fs-video-el{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+}
+.vsl-video-el{
+  object-fit:cover;
+}
+.vsl-fs-video-el{
+  object-fit:contain;
+  background:#000;
+}
+.vsl-shade{
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:linear-gradient(
+    180deg,
+    rgba(0,0,0,.5) 0%,
+    rgba(0,0,0,0) 32%,
+    rgba(0,0,0,0) 58%,
+    rgba(0,0,0,.68) 100%
+  );
+}
+.vsl-video-placeholder .video-label,
+.vsl-fullscreen-video .video-label,
+.vsl-video-placeholder .play-btn{
+  position:relative;
+}
+.vsl-video-placeholder .video-label{
+  margin-bottom:14px;
+}
+.vsl-video-placeholder .play-btn{
+  margin-bottom:0;
+}
+.vsl-caption-overlay{
+  position:absolute;
+  left:0; right:0; bottom:0;
+  padding:22px 24px 26px;
+  background:linear-gradient(0deg, rgba(0,0,0,.75), transparent);
+  pointer-events:none;
+}
+.vsl-caption{
+  color:#E8E8EA;
+  font-size:14.5px;
+  text-align:center;
+  max-width:40ch;
+  margin:0 auto;
+}
+.vsl-nav{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:16px;
+  margin-top:18px;
+}
+.vsl-arrow{
+  width:38px;
+  height:38px;
+  border-radius:50%;
+  border:1.5px solid var(--white);
+  background:transparent;
+  color:var(--white);
+  font-size:18px;
+  line-height:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  transition:transform .15s ease;
+}
+.vsl-arrow-next{
+  background:var(--pink);
+  border-color:var(--pink);
+}
+.vsl-arrow:active{transform:scale(.92);}
+.vsl-dots{
+  display:flex;
+  align-items:center;
+  gap:7px;
+}
+.vsl-dot{
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:rgba(255,255,255,.3);
+}
+.vsl-dot.is-active{
+  background:var(--pink);
+}
+
+.vsl-fullscreen{
+  position:fixed;
+  inset:0;
+  z-index:200;
+  background:#000;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:16px;
+}
+.vsl-fullscreen-video{
+  position:relative;
+  width:100%;
+  max-width:100vw;
+  aspect-ratio:1920 / 1080;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  background:
+    repeating-linear-gradient(135deg, #141416 0, #141416 2px, #0B0B0C 2px, #0B0B0C 26px);
+}
+.vsl-fs-arrow{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  z-index:2;
+}
+.vsl-fs-arrow-prev{
+  left:14px;
+}
+.vsl-fs-arrow-next{
+  right:14px;
+}
+.vsl-fs-arrow:active{
+  transform:translateY(-50%) scale(.92);
+}
+.vsl-close{
+  position:absolute;
+  top:calc(env(safe-area-inset-top, 0px) + 16px);
+  right:20px;
+  z-index:2;
+  background:none;
+  border:none;
+  color:var(--white);
+  font-size:30px;
+  line-height:1;
+  cursor:pointer;
+  padding:4px 8px;
+}
+.vsl-next-hint{
+  margin-top:14px;
+  background:none;
+  border:none;
+  color:rgba(255,255,255,.65);
+  font-family:'JetBrains Mono', monospace;
+  font-size:11px;
+  letter-spacing:.06em;
+  text-decoration:underline;
+  cursor:pointer;
+}
+
 /* ---------- subVSL text placeholder ---------- */
 .subvsl-section{
   padding-top:32px;

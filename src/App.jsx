@@ -5,6 +5,7 @@ import PromoBanner from './components/PromoBanner.jsx'
 import Hero from './components/Hero.jsx'
 import Ticker from './components/Ticker.jsx'
 import VideoBlock from './components/VideoBlock.jsx'
+import VslCarousel from './components/VslCarousel.jsx'
 import SubVslNote from './components/SubVslNote.jsx'
 import AboutFluxy from './components/AboutFluxy.jsx'
 import CTASection from './components/CTASection.jsx'
@@ -55,13 +56,8 @@ export default function App() {
 
           <AboutFluxy />
 
-          {/* VSL secundária */}
-          <VideoBlock
-            label="Área do vídeo — VSL"
-            title="Veja a Nozil funcionando de verdade"
-            tag="Texto temporário"
-            caption='"Do dashboard ao relatório: veja a Nozil sendo usada no dia a dia real de um negócio."'
-          />
+          {/* VSL secundária — carrossel de 3 vídeos */}
+          <VslCarousel />
 
           <Ticker items={tickerPhrases2} />
 
