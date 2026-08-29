@@ -36,9 +36,6 @@ export default function VslCarousel() {
               preload="metadata"
             />
             <div className="vsl-shade"></div>
-            <div className="video-label">
-              Área do vídeo — {index + 1} de {TOTAL_VIDEOS}
-            </div>
             <div className="play-btn"></div>
 
             {!fullscreen && (
@@ -98,9 +95,6 @@ export default function VslCarousel() {
               playsInline
             />
             <div className="vsl-shade"></div>
-            <div className="video-label">
-              Área do vídeo — {index + 1} de {TOTAL_VIDEOS}
-            </div>
 
             <button
               className="vsl-arrow vsl-fs-arrow vsl-fs-arrow-prev"
