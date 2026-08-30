@@ -220,6 +220,9 @@ header{
 .logo--image::after{
   content:none;
 }
+.logo--no-dot::after{
+  content:none;
+}
 .logo-img{
   height:55px;
   width:auto;

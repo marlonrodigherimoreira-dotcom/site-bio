@@ -2,11 +2,23 @@
  * Ícones simples em SVG (traço único), no estilo do restante do site.
  * Representações genéricas — não são os logotipos oficiais das marcas.
  */
-function EmailIcon() {
+function TelegramIcon() {
   return (
     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="3" y="5" width="18" height="14" rx="2.2" stroke="currentColor" strokeWidth="1.8" />
-      <path d="M4 6.5L12 13L20 6.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+      <path
+        d="M20.5 4L2.8 11.1c-.9.35-.87 1.63.04 1.94l4.3 1.44 1.65 5.3c.24.76 1.2.98 1.76.4l2.4-2.5 4.5 3.3c.7.5 1.7.13 1.88-.72L22.6 5.1c.2-.9-.7-1.6-1.5-1.25z"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M8.9 15.4L18 7"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   )
 }
@@ -43,7 +55,7 @@ function InstagramIcon() {
 }
 
 const icons = {
-  email: EmailIcon,
+  telegram: TelegramIcon,
   tiktok: TikTokIcon,
   instagram: InstagramIcon,
 }

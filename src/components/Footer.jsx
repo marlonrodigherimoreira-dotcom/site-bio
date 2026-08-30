@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="wrap">
-        <div className="logo">
+        <div className="logo logo--no-dot">
           <span className="brand">Nozil</span>
         </div>
 

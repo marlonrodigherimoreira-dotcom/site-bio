@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 
 const videos = ['/videos/1bio.mp4', '/videos/2bio.mp4', '/videos/3bio.mp4']
 const TOTAL_VIDEOS = videos.length
@@ -14,9 +14,21 @@ const TOTAL_VIDEOS = videos.length
 export default function VslCarousel() {
   const [index, setIndex] = useState(0)
   const [fullscreen, setFullscreen] = useState(false)
+  const [showFsArrows, setShowFsArrows] = useState(false)
+  const fsVideoRef = useRef(null)
 
   const next = () => setIndex((i) => (i + 1) % TOTAL_VIDEOS)
   const prev = () => setIndex((i) => (i - 1 + TOTAL_VIDEOS) % TOTAL_VIDEOS)
+
+  // esconde as setas sempre que abrir um vídeo novo em tela cheia
+  useEffect(() => {
+    setShowFsArrows(false)
+  }, [fullscreen, index])
+
+  const handleVideoEnded = () => {
+    fsVideoRef.current && fsVideoRef.current.pause()
+    setShowFsArrows(true)
+  }
 
   return (
     <>
@@ -85,31 +97,44 @@ export default function VslCarousel() {
             ×
           </button>
 
-          <div className="vsl-fullscreen-video">
+          <div
+            className="vsl-fullscreen-video"
+            onClick={() => setShowFsArrows(true)}
+          >
             <video
               key={videos[index]}
+              ref={fsVideoRef}
               className="vsl-fs-video-el"
               src={videos[index]}
               controls
               autoPlay
               playsInline
+              onEnded={handleVideoEnded}
             />
-            <div className="vsl-shade"></div>
-
-            <button
-              className="vsl-arrow vsl-fs-arrow vsl-fs-arrow-prev"
-              onClick={prev}
-              aria-label="Vídeo anterior"
-            >
-              ‹
-            </button>
-            <button
-              className="vsl-arrow vsl-arrow-next vsl-fs-arrow vsl-fs-arrow-next"
-              onClick={next}
-              aria-label="Próximo vídeo"
-            >
-              ›
-            </button>
+            {showFsArrows && (
+              <>
+                <button
+                  className="vsl-arrow vsl-fs-arrow vsl-fs-arrow-prev"
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    prev()
+                  }}
+                  aria-label="Vídeo anterior"
+                >
+                  ‹
+                </button>
+                <button
+                  className="vsl-arrow vsl-arrow-next vsl-fs-arrow vsl-fs-arrow-next"
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    next()
+                  }}
+                  aria-label="Próximo vídeo"
+                >
+                  ›
+                </button>
+              </>
+            )}
           </div>
 
           <button className="vsl-next-hint" onClick={next}>

@@ -1,8 +1,8 @@
 const socialLinks = [
   {
-    id: 'email',
-    label: 'Enviar e-mail para a Nozil',
-    href: 'mailto:nozilsupor@gmail.com',
+    id: 'telegram',
+    label: 'Nozil no Telegram',
+    href: '#',
   },
   {
     id: 'tiktok',
