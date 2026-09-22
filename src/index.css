@@ -704,6 +704,16 @@ section.copy p.lead{
     0 -1.5px 2px rgba(0,0,0,.55),
     0 1.5px 2px rgba(0,0,0,.55);
 }
+.text-pink{
+  color:var(--pink);
+}
+.trial-note{
+  margin-top:14px;
+  font-family:'JetBrains Mono', monospace;
+  font-size:11px;
+  letter-spacing:.06em;
+  color:var(--white);
+}
 
 /* ---------- alpha section ---------- */
 .alpha{
