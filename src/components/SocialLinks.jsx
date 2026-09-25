@@ -10,9 +10,8 @@ export default function SocialLinks() {
           className="social-btn"
           href={link.href}
           aria-label={link.label}
-          target={link.id === 'telegram' ? undefined : '_blank'}
-          rel={link.id === 'telegram' ? undefined : 'noopener noreferrer'}
-          onClick={link.id === 'telegram' ? (e) => e.preventDefault() : undefined}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <SocialIcon id={link.id} />
         </a>

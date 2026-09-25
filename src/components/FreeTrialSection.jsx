@@ -24,8 +24,13 @@ export default function FreeTrialSection() {
           </span>
         </Reveal>
 
-        {/* Botão apenas visual — ainda não linkado */}
-        <Reveal as="button" className="buy-btn" delay={3} type="button">
+        {/* Leva para a página do teste grátis */}
+        <Reveal
+          as="a"
+          className="buy-btn"
+          delay={3}
+          href="/teste-gratis.html"
+        >
           Começar teste grátis →
         </Reveal>
 

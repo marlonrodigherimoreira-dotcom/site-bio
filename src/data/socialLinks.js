@@ -2,7 +2,7 @@ const socialLinks = [
   {
     id: 'telegram',
     label: 'Nozil no Telegram',
-    href: '#',
+    href: 'https://t.me/+5554984079478',
   },
   {
     id: 'tiktok',
